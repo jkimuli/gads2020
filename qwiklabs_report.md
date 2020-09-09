@@ -35,3 +35,9 @@ GADS2020 cloud track program.
 ![Examine Billing data with BigQuery](/screenshots/bigquery_examine.png)
 
 ![Lab: Cloud Storage](/screenshots/cloud_storage.png)
+
+![Lab: Application Development](/screenshots/app_dev.png)
+
+![Lab: Private Google Access and Cloud NAT](/screenshots/nat.png)
+
+![Lab: VPC Networking](/screenshots/virtual_networks.png)
