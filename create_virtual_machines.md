@@ -25,7 +25,7 @@ Lab - Creating Virtual Machines. In this lab I  explored a number of  Virtual Ma
             NAME     ZONE           MACHINE_TYPE   PREEMPTIBLE  INTERNAL_IP  EXTERNAL_IP  STATUS
             my-vm-1  us-central1-c  n1-standard-1               10.128.0.2                RUNNING
         ```    
-        
+
 *  Create a Windows VM with the following characteristics
     * Region - europe-west2
     * Zone - europe-west2-a
@@ -82,27 +82,27 @@ Lab - Creating Virtual Machines. In this lab I  explored a number of  Virtual Ma
             ```
 
         * Confirm that the VM has been created
-              ```console
+            ```console
                 student_04_cbb30071dbfd@cloudshell:~ (qwiklabs-gcp-04-fab87f85e18e)$ gcloud compute instances list
                 NAME           ZONE            MACHINE_TYPE    PREEMPTIBLE  INTERNAL_IP  EXTERNAL_IP    STATUS
                 my-windows-vm  europe-west2-a  n1-standard-2                10.154.0.2   34.89.17.4     RUNNING
                 my-vm-1        us-central1-c   n1-standard-1                10.128.0.2                  RUNNING
                 my-custom-vm   us-west1-b      custom-6-32768               10.138.0.2   35.227.174.58  RUNNING 
-              ```
+            ```
 
         * SSH into VM to confirm the VM characteristics
-              ```console
+            ```console
                  student_04_cbb30071dbfd@cloudshell:~ (qwiklabs-gcp-04-fab87f85e18e)$ gcloud compute ssh my-custom-vm --zone=us-west1-b
-              ```
+            ```
 
-              ```console
+            ```console
                  student-04-cbb30071dbfd@my-custom-vm:~$ free
                  total        used        free      shared  buff/cache   available
                  Mem:       32943884      221080    32591316        8500      131488    32389532
                  Swap:             0           0           0   
-              ```
+            ```
 
-              ```console
+            ```console
                  student-04-cbb30071dbfd@my-custom-vm:~$ lscpu
                 Architecture:        x86_64
                 CPU op-mode(s):      32-bit, 64-bit
@@ -131,7 +131,7 @@ Lab - Creating Virtual Machines. In this lab I  explored a number of  Virtual Ma
                 Flags:               fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology non
                 stop_tsc cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single pti ssbd ibrs ibpb
                 stibp fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm rdseed adx smap xsaveopt arat md_clear arch_capabilities  
-                ```
+            ```
 
  
 
